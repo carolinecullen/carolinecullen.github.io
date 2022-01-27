@@ -1,0 +1,23 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Courier New"; 
+  font-weight: bold;
+}
+
+body, html {
+  background-color: #FDFCDC;
+  color: #0081A7;
+  line-height: 1.8;
+}
+
+header {
+  background-image: url("resources/carolinecullen.png");
+  text-align: center;
+  width: 1200px;
+  height: 600px;
+}
+
+header:hover {
+  background-image: url("resources/carolinecullenpink.png");
+  width: 1250px;
+  height: 600px;
+}
