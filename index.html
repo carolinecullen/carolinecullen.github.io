@@ -1,95 +1,19 @@
-<html>
-<head>
-   <title>Blender</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="container">
-
-   <div class="page-header">
-   <center>
-      <h1 style="color:DodgerBlue;margin-left:60px;">Blender<br><small>Caroline Cullen</small></h1>
-   </center>
-   </div>
-
-      <center><img src="thumbnail.jpg" width=800 height=516></center></br>
-
-   <div style="border:2px solid Violet; background-color:rgba(255, 255, 150, 0.5);" class="well well-lrg">
-      <h1>Description</h1>
-      <p>Like Slender but with a Blender.</p>
-   </div>
-
-   <div style="border:2px solid Violet; background-color:rgba(125, 255, 150, 0.5);" class="well well-lrg">
-      <h1>Objective of the Game</h1>
-      <ul>
-         <li>Collect all da fruits</li>
-         <li>Bring em back to Blenderman</li>
-         <li>Reach another level of existence with you and all your adult friends</li>
-         <li>DONT GET ROOSTER BLOCKED</li>
-         <center><img src="blender.jpg" width=700 height=525></center></br>
-      </ul>
-      
-   </div>
-
-   <div style="border:2px solid Violet; background-color:rgba(155, 255, 255, 0.5);" class="well well-lrg">
-      <h1>Controls</h1>
-      <ul>
-         <li>WASD to move</li>
-         <li>Mouse pointer to look around</li>
-         <li>Left-Shift to sprint</li>
-      </ul>
-      
-   </div>
-
-   <div style="border:2px solid Violet; background-color:rgba(25, 99, 255, 0.5);" class="well well-lrg">
-      <h1>Features</h1>
-      <ul>
-         <li>Collision detection with edges of map and fruits</li>
-         <li>Random generation of fruit and tree positions</li>
-         <li>Trippy skysphere with layer textures that are interpolated based on "sun" position</li>
-         <li>Skysphere rotation</li>
-         <li>Rotating sun position</li>
-         <li>Billboarding and randomly generating particles</li>
-         <li>Multiple shape object uploads</li>
-      </ul>
-   </div>
-
-   <div  style="border:2px solid Violet; background-color:rgba(255, 99, 71, 0.5);" class="well well-lrg">
-
-      <h1>Collision detection with edges of map and fruits</h1>
-      <p>Before I incremented the camera position on each render call I checked if the magnitude of the distance between the camera position and either the fruit or the edge of the map was less than a certain radius. If the distance between the edge and the camera position was smaller than a certain amount I rendered the rooster and didn't increment the camera position so the user doesn't move. For the fruit if the distance was smaller then I changed the "collected" bool for that fruit and then no longer rendered it. </p>
-      <center><img src="rooster.jpg" width=700 height=525></center></br>
-
-      <h1>Random generation of fruit, particle and tree positions</h1>
-      <p>Randomly generated positions for the 3 above features. In the case of tree and fruit these are generated before the render loop. In the case of the particle they are update random values for every render call. </p>
-      <center><img src="scene.jpg" width=700 height=525></center></br>
-
-      <h1>Rotating skysphere position as light source</h1>
-      <p>The skysphere is slowly rotating about the Y axis while the light source is rotating as well, which is updating the light vector being passed into the shaders where I am using phong shading, and thusly the "sun" rotation is changing the shading of my objects</p>
-      <center><img src="roosterButt.jpg" width=700 height=525></center></br>
-
-      <h1>Trippy skysphere with layer textures</h1>
-      <p> The skysphere has two textures that are being interpolated and rendered based on the light position.</p>
-      <h1>Billboarding and randomly generating particles</h1>
-      <p> The particles always fact the user using the Billboarding technique. They are given random XYZ position, XYZ velocity, and lifespan</p>
-
-      <h1>Multiple shape object uploads</h1>
-      <p> Objects made of many different shapes and most are shaded differently.</p>
-
-      <center><img src="fruits2.jpg" width=700 height=525></center></br>
-       <center><img src="strawLemon.jpg" width=700 height=525></center></br>
-
-   </div>
-
-   <div style="border:2px solid Violet;" class="well well-lrg">
-      <h1>Resources</h1>
-      <ul>
-         <li><a href="http://csc.lsu.edu/~kooima/misc/cs594/final/part2.html">How to make cool skyspheres - http://csc.lsu.edu/~kooima/misc/cs594/final/part2.html</a></li>
-         <li><a href="https://poly.google.com/">Where I got my objects - https://poly.google.com/</a></li>
-      </ul>
-   </div>
-
-</body>
-
+<!doctype HTML>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>i am caroline cullen and this is my website</title>
+      <meta name="" content="information about ya girl, caroline">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header></header>
+      <div class="image" id="image-1">
+         <img src="resources/graduation.png" title="i graduated" width="500px" height="600px" align="right" right="30px"></br>
+      </div>
+      <div class="image" id="image-2">
+         <img src="resources/bloodorange.png" title="i like blood orange flavored things" width="400px" height="600px" left="700px"></br>
+      </div>
+   </body>
+   <!-- <script src="mywebsitesjs.js"></script> -->
 </html>
