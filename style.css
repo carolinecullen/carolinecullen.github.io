@@ -12,7 +12,9 @@ body, html {
 
 header {
   background-image: url("resources/carolinecullen.png");
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   height: 600px;
 }
@@ -22,3 +24,13 @@ header:hover {
   width: 1250px;
   height: 600px;
 }
+
+#image-1 {
+  padding-left: 120px;
+}
+
+#image-2 {
+  padding-left: 775px;
+  padding-right: 150px;
+}
+
