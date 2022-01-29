@@ -8,6 +8,11 @@ body, html {
   background-color: #FDFCDC;
   color: #0081A7;
   line-height: 1.8;
+  cursor: url("resources/meat.png"), auto;
+}
+
+body:active {
+  cursor: url("resources/cookedmeat.png"), auto;
 }
 
 header {
@@ -23,6 +28,65 @@ header:hover {
   background-image: url("resources/carolinecullenpink.png");
   width: 1250px;
   height: 600px;
+}
+
+p {
+  padding-left: 450px;
+  padding-right: 450px;
+}
+
+a:link {
+  color: #0081A7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F07167;
+}
+
+a:hover {
+  color: #0081A7;
+  cursor: url("resources/cookedmeat.png"), auto;
+}
+
+a:active {
+  cursor: url("resources/cookedmeat.png"), auto;
+} 
+
+.intro {
+  text-align: center;
+  cursor: url("resources/meat.png"), auto;
+}
+
+.intro a {
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar {
+  text-align: center;
+  overflow: hidden;
+  cursor: url("resources/meat.png"), auto;
+}
+
+.navbar a {
+  color: #F07167;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #00AFB9;
+  color: #0081A7;
+}
+
+.navbar a.active {
+  cursor: url("resources/cookedmeat.png"), auto;
+  background-color: #0081A7;
+  color: #00AFB9;
 }
 
 #image-1 {
