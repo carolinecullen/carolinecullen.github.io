@@ -30,6 +30,10 @@ header:hover {
   height: 600px;
 }
 
+h1, h2, h3 {
+  color: #00AFB9;
+}
+
 p {
   padding-left: 450px;
   padding-right: 450px;
