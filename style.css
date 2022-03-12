@@ -36,16 +36,17 @@ p {
 }
 
 a:link {
-  color: #0081A7;
+  color: #F07167;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0081A7;
+  color: #F07167;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #F07167;
+  color: #0081A7;
   cursor: url("resources/cookedmeat.png"), auto;
 }
 
